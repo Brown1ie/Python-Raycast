@@ -3,7 +3,7 @@ import sys
 from miniraycastdemoscreen import RayCaster
 import time
 from MazeCreation import generate_alt_maze, generate_random_maze
-import FinalMazeModeRayCasterSPRITESWORDMAP
+import RaycasterV1701
 import ColourCaster
 def main():
     
@@ -824,9 +824,9 @@ def main():
                     generate_alt_maze(MapSize, NumberOfGeneratedBlocks)
                     print("Generated Map")
                     print("Loading...")
-                    FinalMazeModeRayCasterSPRITESWORDMAP.ScreenSizePlayerSpeed=ScreenSizePlayerSpeed
-                    FinalMazeModeRayCasterSPRITESWORDMAP.main()
-                    FinalMazeModeRayCasterSPRITESWORDMAP.ScreenSizePlayerSpeed=ScreenSizePlayerSpeed
+                    RaycasterV1701.ScreenSizePlayerSpeed=ScreenSizePlayerSpeed
+                    RaycasterV1701.main()
+                    RaycasterV1701.ScreenSizePlayerSpeed=ScreenSizePlayerSpeed
             else:
                 secondary_generate_button.is_highlighted = False
 
