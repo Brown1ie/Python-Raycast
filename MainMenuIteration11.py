@@ -3,7 +3,7 @@ import sys
 from miniraycastdemoscreen import RayCaster
 import time
 from MazeCreation import generate_alt_maze, generate_random_maze
-import RaycasterV1701
+import RaycasterV1702 as MainRaycaster
 import ColourCaster
 def main():
     
@@ -322,7 +322,7 @@ def main():
         y=350,
         width=240,
         height=50,
-        label="Generate(Enemy Mode)",
+        label="Generate(Bonus Mode)",
         color=GreenBlue,
         border_color=White  # Specify the border color
     )
@@ -824,9 +824,11 @@ def main():
                     generate_alt_maze(MapSize, NumberOfGeneratedBlocks)
                     print("Generated Map")
                     print("Loading...")
-                    RaycasterV1701.ScreenSizePlayerSpeed=ScreenSizePlayerSpeed
-                    RaycasterV1701.main()
-                    RaycasterV1701.ScreenSizePlayerSpeed=ScreenSizePlayerSpeed
+                    #MainRaycaster.ScreenSizePlayerSpeed=ScreenSizePlayerSpeed
+                    pygame.quit()
+                    MainRaycaster.boot(ScreenSizePlayerSpeed)
+                    
+                    #MainRaycaster.ScreenSizePlayerSpeed=ScreenSizePlayerSpeed
             else:
                 secondary_generate_button.is_highlighted = False
 

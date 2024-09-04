@@ -19,7 +19,7 @@ def main():
             else:
                 map_row.append(0)
         world_map.append(map_row)
-
+    print(world_map)
     pygame.init()
 
     try:
