@@ -1,1 +1,1 @@
-Download all python files except for any images, then run launcher.py
+Download all files except for any  in the images folder, then run launcher.py
